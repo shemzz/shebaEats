@@ -6,7 +6,7 @@ import logowhite from "../Assets/logowhite.png";
 import bgleaf from "../Assets/images/package-leaf.png";
 import bgredpepper from "../Assets/images/red-pepper-opposite.png";
 import bgredtomato from "../Assets/images/red-tomato.png";
-import chopstable from "../Assets/images/chopstable.png";
+import chopstable from "../Assets/animationimg/plateOfRice.png";
 import Totalslist from "../components/Totalslist";
 
 const Navbar = () => {
