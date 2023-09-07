@@ -1,0 +1,105 @@
+.custompack{
+    position: relative;
+    .navbar{
+        .custompacklink{
+            color: $color-glow-green;
+        }
+    }
+    .packages__box{
+    z-index:5;
+        &__description{
+            .package-name{
+                z-index: 20;
+                input{
+                    font-size: inherit;
+                    color: inherit;
+                    outline: 0;
+                    border: 0;
+                    background-color: inherit;
+                    z-index: 20;
+                    &::placeholder{
+                        color: #aaa;
+                        font-weight: 550;
+                    }
+                }
+            }  
+            .miniinfo{
+                color: $color-brown-light;
+                font-size: 1.5rem;
+                font-style: oblique;
+                padding: .5rem 12%;
+            }  
+            .details-box{
+                display: flex;
+                width: fit-content;
+                background-color: transparent !important;
+                align-items: center;
+                height: 8rem;
+                .price-section{
+                    padding: 1rem 1.4rem;
+                    height: auto;
+                    background-color: white;
+                    height: 100%;
+                }
+                .cart-text{
+                    height: 100%;
+                    background-color: $color-glow-green;
+                    padding: 1rem 2.4rem;
+                    color: white;
+                    font-size: 2.2rem;
+                    border-radius: 0 1rem 1rem 0;
+                    transition: all 500ms ease;
+                    &:hover{
+                        background-color: $color-green;
+                    }
+                }
+            }
+        }
+        .custom-drinks{
+            z-index: 50;
+        }
+        &__content{
+            .content-section{
+                height: 100%;
+                min-height: 80%;
+            }
+        }
+    }
+}
+@media screen and (max-width:760px){
+    .custompack{
+        .packages__box{
+            &__description{
+                .package-name{
+                    input{
+                        text-align: center;
+                        margin-left: 0;
+                        padding-left: 0;
+                        width: 90vw;
+                    }
+                }
+                .details-box{
+                   height: 7rem;
+                }
+            }
+            &__content{
+                .packages-content{
+                    .each-content{
+                        .content-quantity{
+                            padding: 1.2rem 0;
+                        }
+                    }
+                }
+            }
+        }
+        .smallscreen{
+            display: block;
+        }
+        .bigscreen{
+            display: none;
+        }
+        .custom-drinks{
+            padding-bottom: 2rem;
+        }
+    }
+}

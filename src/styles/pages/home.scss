@@ -1,0 +1,95 @@
+.home{
+    background:linear-gradient(to bottom, $color-brown-bg, rgb(252,249,245)) ;
+    .landing{
+        background-color: white;
+        min-height: 100vh;
+        .navbar{
+            padding: 4.8rem 2% 4.8rem 8%;
+        }
+
+    }
+    &__header{
+        .blurhomebg{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            overflow: hidden;
+            img{
+                height: 15vw;
+                object-fit: cover;
+                position: absolute;
+                z-index: 1;
+                &.blurleafimg{
+                    left: 0;
+                    top: 70vh;
+                }
+                &.blurpuffimg{
+                    right:15vw;
+                    top: 65vh;
+                    height: 12vw;
+                }
+                &.blursamosaimg{
+                    left:15vw;
+                    top: 35vh;
+                }
+                &.blurchickenimg{
+                    right:-5vw;
+                    top: 65vh;
+                    height: 12vw;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .home{
+        .landing{
+            .navbar{
+                padding: 0 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:700px){
+    .home{
+    background:linear-gradient(to bottom, $color-brown-bg 0, white 50% 85%, $color-brown-bg 90% 100%);
+
+        &__header{
+            .blurhomebg{
+                img{
+                    height: 8.4rem;
+                    &.blurpuffimg{
+                        height: 8rem;
+                        top: 50vh;
+                    }
+                    &.blurleafimg{
+                        top: 35vh;
+                    }
+                    &.blursamosaimg{
+                        left:15vw;
+                        top: 16vh;
+                    }
+                    &.blurchickenimg{
+                        height: 7rem;
+                        top: 35vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:900px) {
+    .home{
+        .navbar{
+            .btn{
+                background-color: $color-brown-light;
+                &:hover{
+                    background-color: $color-glow-green;
+                }
+            }
+        }
+    }
+}

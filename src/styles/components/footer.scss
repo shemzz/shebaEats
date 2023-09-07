@@ -1,0 +1,114 @@
+.footer {
+  padding-left: 10vw;
+  padding-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+  &__contents {
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    padding-bottom: 20%;
+    img {
+      width: 18%;
+      object-fit: contain;
+    }
+    &__links {
+      padding-top: 2rem;
+      padding-left: 13%;
+      display: flex;
+      font-family: "lexend deca", sans-serif;
+      height: 100%;
+      .footer-block {
+        height: 100%;
+        &:first-child {
+          padding-right: 3rem;
+        }
+        div {
+          font-size: 1.75rem;
+          transition: all 0.5s ease;
+          width: max-content;
+          padding: 1rem 0;
+          &:hover {
+            color: $color-brown-mid;
+          }
+        }
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .footer {
+    padding-left: 6vw;
+    padding-top: 5vh;
+    &__contents {
+      &__links {
+        padding-left: 8%;
+        .footer-block {
+          div {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    display: block;
+    &__contents {
+      img {
+        width: 14%;
+      }
+      padding-bottom: 2rem;
+    }
+    &__image {
+      margin-left: auto;
+      width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    &__contents {
+      display: block;
+      img {
+        width: 22%;
+      }
+      &__links {
+        padding-left: 0;
+      }
+    }
+    &__image {
+      width: 70%;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .footer {
+    &__contents {
+      img {
+        width: 25%;
+      }
+      &__links {
+        .footer-block {
+          div {
+            font-size: 1.35rem;
+          }
+        }
+      }
+    }
+    &__image {
+      width: 90%;
+    }
+  }
+}

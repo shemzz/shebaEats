@@ -1,0 +1,304 @@
+.homepacks {
+  padding-top: 4rem;
+  &__top {
+    position: relative;
+    &__background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: 0;
+      div {
+        height: 25vw;
+        position: absolute;
+        z-index: 1;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        &:nth-child(1) {
+          top: 12%;
+          left: -8%;
+        }
+        &:nth-child(2) {
+          top: 35%;
+          left: 18%;
+          height: 15vw;
+        }
+        &:nth-child(3) {
+          top: 2%;
+          right: 13%;
+        }
+        &:nth-child(4) {
+          top: 0;
+          height: 10vw;
+          right: -3%;
+        }
+      }
+    }
+    &__texts {
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 25vh;
+      text-align: center;
+      .mini-text {
+        padding: 1rem 5rem 3rem;
+      }
+    }
+  }
+  &__packages {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding-top: 8rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .scroll {
+      width: fit-content;
+      background-color: $color-glow-green;
+      color: white;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      border-radius: 0 5rem 5rem 0;
+      padding: 1rem 1.2rem;
+      margin-right: 1rem;
+    }
+    .pack {
+      width: 100%;
+      height: 100%;
+      padding: 0 0.8rem;
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 175%;
+      text-transform: capitalize;
+      color: $color-brown-mid;
+      .packimg {
+        width: 100%;
+        height: auto;
+        img {
+          height: 20vw;
+          min-width: 15vw;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .packname {
+        font-family: "lexend deca", sans-serif;
+        padding: 0 1rem;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        span {
+          width: max-content;
+        }
+      }
+      .price {
+        font-weight: 700;
+      }
+    }
+  }
+  .allpackages {
+    display: flex;
+    padding: 3rem 6%;
+    align-items: center;
+    width: 100%;
+    .packbtn {
+      padding: 2rem 3rem;
+      text-transform: capitalize;
+      font-size: 2rem;
+      font-family: "lexend deca", sans-serif;
+      border: 1px solid $color-brown-light;
+      width: max-content;
+      color: $color-brown-light;
+      border-radius: 1rem;
+      font-weight: 500;
+      margin-right: 5px;
+      transition: all 300ms ease;
+      div {
+        width: max-content;
+      }
+      &:hover {
+        background-color: $color-brown-light;
+        color: white;
+      }
+    }
+    .line {
+      height: 0.2px;
+      background-color: $color-brown-light;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .homepacks {
+    &__top {
+      &__background {
+        div {
+          width: 30vw;
+          &:nth-child(1) {
+            left: -10%;
+          }
+          &:nth-child(2) {
+            height: 20vw;
+            left: 5vw;
+          }
+          &:nth-child(3) {
+            right: 8%;
+          }
+          &:nth-child(4) {
+            height: 15vw;
+            right: -10%;
+          }
+        }
+      }
+      &__texts {
+        padding-top: 18vh;
+        width: 60%;
+      }
+    }
+    &__packages {
+      .pack {
+        .packimg {
+          img {
+            min-width: 20vw;
+            height: 25vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .homepacks {
+    &__top {
+      &__background {
+        div {
+          &:nth-child(2) {
+            left: 5vw;
+            top: 5%;
+          }
+          &:nth-child(3) {
+            right: 0;
+            top: 4%;
+          }
+          &:nth-child(4) {
+            right: 20%;
+            top: 2%;
+          }
+        }
+      }
+      &__texts {
+        width: 75%;
+        padding-top: 12vh;
+      }
+    }
+    &__packages {
+      padding-top: 5rem;
+      .pack {
+        .packimg {
+          img {
+            min-width: 28vw;
+            height: 35vw;
+          }
+        }
+      }
+    }
+    .allpackages {
+      padding: 2rem;
+      .packbtn {
+        padding: 1.2rem 2rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .homepacks {
+    &__top {
+      &__background {
+        padding-top: 5vh;
+        div {
+          &:nth-child(2) {
+            left: 5vw;
+            top: 5%;
+          }
+          &:nth-child(3) {
+            right: -10%;
+            top: 40%;
+          }
+          &:nth-child(4) {
+            right: 10%;
+            top: 2%;
+          }
+        }
+      }
+      &__texts {
+        width: 100%;
+        padding: 2rem;
+        padding-top: 3vh;
+        .heading {
+          font-size: 3.8rem;
+          line-height: 4.5rem;
+        }
+        .mini-text {
+          padding: 1rem 0;
+        }
+      }
+    }
+    &__packages {
+      padding-top: 5rem;
+      .pack {
+        font-size: 1.6rem;
+        .packimg {
+          img {
+            min-width: 35vw;
+            height: 45vw;
+          }
+        }
+      }
+    }
+    .allpackages {
+      padding: 1.6rem;
+      display: grid;
+      place-items: center;
+      .packbtn {
+        padding: 1rem 3rem;
+        font-size: 1.6rem;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 1.4rem;
+      }
+      .line {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .homepacks {
+    &__packages {
+      padding-top: 1rem;
+      .scroll {
+        display: none;
+      }
+      .pack {
+        font-size: 1.3rem;
+        .packname {
+          padding: 0 1rem;
+        }
+        .packimg {
+          img {
+            min-width: 42vw;
+            height: 50vw;
+          }
+        }
+      }
+    }
+  }
+}

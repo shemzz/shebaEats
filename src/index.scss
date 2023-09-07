@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import "./styles/variables";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  background-color: white;
+  font-family:"Lexend", sans-serif;
+  color: black;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.link{
+  color: inherit;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.point{
+  cursor:pointer;
+}
+.heading{
+  font-size: 6.8rem;
+  color: $color-brown-light;
+  line-height: 8.6rem;
+  letter-spacing: .08rem;
+}
+.mini-text{
+  font-size: 2.4rem;
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 150%;
+  font-weight: 200 !important;
+}
+.btn{
+  width: fit-content;
+  padding: 1.2rem 3.6rem;
+  border-radius: 4rem;
+  background-color: $color-brown-light;
+  color: white;
+  cursor: pointer;
+  transition: all 500ms ease;
+  user-select: none;
+  -webkit-user-select: none;
+  &:hover{
+    background-color: $color-glow-green;
+  }
+}
+.button{
+  width: fit-content;
+  padding: 1.2rem 3.6rem;
+  border-radius: 4rem;
+  background-color: $color-glow-green;
+  color: white;
+  transition: all 500ms ease;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  &:hover{
+    background-color: $color-brown-light;
+  }
+}
+@media screen and (max-width:1300px) {
+  .heading{
+    font-size: 6rem;
+    line-height: 7.2rem;
+  }
+  .mini-text{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:1100px) {
+  .heading{
+    padding-top: 10vh;
+    font-size: 5rem;
+    line-height: 6rem;
+}
+.mini-text{
+    font-size: 1.8rem;
+}
+}
+@media screen and (max-width:550px) {
+  .heading{
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+  .mini-text{
+      font-size: 1.6rem;
+  }
+  .btn, .button{
+    padding: .8rem 2.2rem;
+  }
+}
+@media screen and (max-width:400px) {
+  .heading{
+    font-size: 4.5rem;
+    line-height: 5.4rem;
+  }
+  .mini-text{
+      font-size: 1.5rem;
+  }
+}
+.packages-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:0 2.4rem 2rem;
+  .each-content{
+      display: flex;
+      align-items: center;
+      .content-img{
+          height: 6.4rem;
+          width: 6.4rem;         
+          img{
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+              max-height: 6.4rem;
+              max-width: 6.4rem;
+          }
+      }
+      .content-quantity{
+          margin-left: 1rem;
+          font-size: 1.7rem;
+          font-family: 'lexend deca', sans-serif;
+          padding:3rem 0;
+          width: 70%;
+          text-transform: capitalize;
+          span{
+              color: $color-green;
+          }
+      }
+      .circle-line{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 100%;
+          margin: 0 1rem;
+          .line{
+              height: 100%;
+              width: 1.6px;
+              background-color: $color-brown-mid;
+              display: grid;
+              place-items: center;
+          }
+          .circle{
+              padding: .3rem;
+              border-radius: 50%;
+              border: 1px solid rgb(218, 202, 161);
+              display: grid;
+              place-items: center;
+              .inner-circle{
+                  width: 1.2rem;
+                  height: 1.2rem;
+                  border-radius: 50%;
+                  background-color: $color-brown-mid;
+              }
+          }
+      }
+      &:first-child{
+          .line:nth-child(1){
+              background-color: transparent;
+          }
+      }
+      &:nth-child(2){
+          .line:nth-child(1){
+              background-color: transparent;
+          } 
+      }
+      &:nth-last-child(1){
+          .line.bottom{
+              background-color: transparent;
+          }  
+      }
+      &:nth-last-child(2){
+          .line.bottom{
+              background-color: transparent;
+          }  
+      }
+  }
+    .each-content{
+        .content-quantity{
+            padding: 1.5rem 0;
+            font-size: 1.5rem;
+            .change-section{
+                width: fit-content;
+                display: flex;
+                background-color: white;
+                border-radius: 5px;
+                margin-bottom: .8rem;
+                box-shadow: 1px 1px 1px rgba(0,0,0,0.05), 0px 2px 1px rgba(0,0,0,0.05), 1px 0 2px rgba(0,0,0,0.05);
+
+                .change{
+                    padding:.4rem 1rem;
+                    font-size: 1.7rem;
+                }
+                .zero{
+                    color: $color-brown-mid;
+                    padding:.4rem 1rem;
+                    border-left: .5px solid $color-brown-light;
+                    border-right: .5px solid $color-brown-light;
+                }
+            }
+        }
+    }
+}
+.drinks-box{
+  z-index: 80;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-left: 3rem;
+  padding-top: 1rem;
+  font-family: "lexend deca", sans-serif;
+  .checkbox{
+      width: 2.2rem;
+      height: 2.2rem;
+  }
+}
+.change-section{
+  user-select: none;
+  -moz-user-select: none;
+  color: black;
+}
+.noselect{
+  user-select: none;
+  -moz-user-select: none;
+}
+@media screen and (max-width:500px) {
+        .packages-content{
+            grid-template-columns: 1fr;
+            .each-content{
+                .content-img{
+                    height: 5rem;
+                    width: 5rem;
+                    img{
+                        max-width: 5rem;
+                        max-height: 5rem;
+                    }
+                }
+                .content-quantity{
+                    padding: 2.5rem 0;
+                }
+                &:nth-child(2){
+                    .line:nth-child(1){
+                        background-color: $color-brown-mid;
+                    }  
+                }
+                &:nth-last-child(2){
+                    .line.bottom{
+                        background-color: $color-brown-mid;
+                    }  
+                }
+            }
+        }
+}
+
+@import "./styles/components/navbar.scss";
+@import "./styles/components/header.scss";
+@import "./styles/components/special.scss";
+@import "./styles/components/followus.scss";
+@import "./styles/components/treat.scss";
+@import "./styles/components/drinks.scss";
+@import "./styles/components/packagesbg.scss";
+@import "./styles/components/homepackages.scss";
+@import "./styles/components/buildpack.scss";
+@import "./styles/components/homeorder.scss";
+@import "./styles/components/footer.scss";
+
+@import "./styles/pages/home.scss";
+@import "./styles/pages/packages.scss";
+@import "./styles/pages/custompack.scss";
+@import "./styles/pages/event.scss";
+@import "./styles/pages/corporate.scss";
+@import "./styles/pages/checkout.scss";
+
+.nodrinks{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease;
+  top: -100vh;
+}
+@media screen and (max-width:760px) {
+  .drinks-box{font-size: 1.6rem;
+    margin-left: 2rem;
+    .checkbox{
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+}
