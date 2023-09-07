@@ -5,7 +5,7 @@ const Packageslist = [
   {
     id: 0,
     pname: "Special Jollof Delight",
-    pimg: deluxe,
+    pimg: 'https://res.cloudinary.com/deviti/image/upload/v1694096838/shebaEats/Jollof-Rice-Chicken-Plantain.jpg',
     price: 3000,
     unit: 0,
     total: 0,
@@ -31,7 +31,7 @@ const Packageslist = [
   {
     id: 1,
     pname: "Special Fried Elegance",
-    pimg: deluxe,
+    pimg: 'https://res.cloudinary.com/deviti/image/upload/v1694096838/shebaEats/fried_rice.jpg',
     price: 3000,
     unit: 0,
     total: 0,
@@ -93,7 +93,7 @@ const Packageslist = [
   {
     id: 4,
     pname: "Seaside Jollof Fiesta",
-    pimg: deluxe,
+    pimg: 'https://res.cloudinary.com/deviti/image/upload/v1694096838/shebaEats/fried_rice.jpg',
     price: 3500,
     unit: 0,
     total: 0,

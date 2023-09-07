@@ -1,57 +1,76 @@
-import springrolls from "../Assets/packagesimg/springrolls.png";
-import puff from "../Assets/packagesimg/puff.png";
-import samosa from "../Assets/packagesimg/samosa.png";
-import gizzard from "../Assets/packagesimg/gizzard.png";
-import chicken from "../Assets/packagesimg/chicken.png";
-import fish from "../Assets/packagesimg/fish.png";
-import mosa from "../Assets/packagesimg/mosa.png";
-import prawn from "../Assets/packagesimg/prawn.png";
-import kebab from "../Assets/packagesimg/kebab.png";
-import popcorn from "../Assets/packagesimg/popcorn.png";
-import corndogs from "../Assets/packagesimg/corndogs.png";
-
 const Contentlist = [  
     {
       id: 33,
       contname: "Jollof Rice",
-      contimg: chicken,
+      // contimg: chicken,
       price: 800,
       unit: 0,
     },
     {
       id: 34,
       contname: "Fried Rice",
-      contimg: gizzard,
       price: 750,
       unit: 0,
     },
     {
       id: 35,
-      contname: "Fried Potatoes with Egg Sauce",
-      contimg: prawn,
+      contname: "Chips",
       price: 600,
       unit: 0,
     },
     {
       id: 36,
-      contname: "Fried Potatoes with Liver Sauce",
-      contimg: springrolls,
+      contname: "Liver Sauce",
       price: 600,
       unit: 0,
     },
     {
       id: 37,
-      contname: "White Yam with Egg Sauce",
-      contimg: puff,
+      contname: "White Yam",
       price: 700,
       unit: 0,
     },
     {
       id: 38,
-      contname: "Fried Yam with Egg Sauce",
-      contimg: samosa,
+      contname: "Egg Sauce",
       price: 650,
       unit: 0,
-    },
+  },
+  {
+    id: 39,
+    contname: "Fried Chicken (Medium)",
+    price: 650,
+    unit: 0,
+  },
+  {
+    id: 40,
+    contname: "Fried Chicken (Large)",
+    price: 650,
+    unit: 0,
+  },
+  {
+    id: 41,
+    contname: "peppered Fish",
+    price: 650,
+    unit: 0,
+  },
+  {
+    id: 42,
+    contname: "Coleslaw",
+    price: 650,
+    unit: 0,
+  },
+  {
+    id: 43,
+    contname: "Pepper Sauce",
+    price: 650,
+    unit: 0,
+  },
+  {
+    id: 44,
+    contname: "Boiled Egg",
+    price: 650,
+    unit: 0,
+  },
 ];
 export default Contentlist;
