@@ -20,11 +20,11 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="mobile-nav">
-        <Link to="/" className="logo">
+
           <div className="logo">
           <img src={logo} alt="" />
           </div>
-          </Link>
+
 
         <Link className="link" to="/checkout">
           <div className="cart mobile">
